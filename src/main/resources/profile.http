@@ -1,0 +1,21 @@
+### Profile registration
+POST localhost:8080/profile/registration
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "phone": "998915721213",
+  "password": "123456",
+  "role": "ROLE_ADMIN"
+}
+
+
+### Profile authorization (login)
+POST localhost:8080/profile/authorization
+Content-Type: application/json
+
+{
+  "phone": "998915721213",
+  "password": "123456"
+}
